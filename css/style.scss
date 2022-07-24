@@ -1,0 +1,553 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@400;700&display=swap');
+
+body{
+  height: 100%;
+  background-color: #333333;
+}
+html{
+   height: 100%;
+}
+
+// CONTAINER
+.container{
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
+}
+// INTRO
+.intro{
+   width: 100%;
+   height: 450px;
+   background: url(../img/2redag.png) center no-repeat ;
+   background-size:  cover;
+    
+      &__content {
+         padding-top: 120px;
+         margin-left: 370px;
+      }
+   	&__title {
+         font-family: 'Grand Hotel';
+         font-size: 90.7px;
+         line-height: 1.2;
+         font-weight: 400;
+         color: #ffc200;
+      }
+		&__text {
+         width: 100%;
+         font-family: Montserrat;
+         font-size: 20.8px;
+         line-height: 1.2;
+         font-weight: 400;
+         color: #ffffff;
+         width: 500px;
+      }
+		&__button {
+         font-family: Montserrat;
+         font-size: 16.0px;
+         line-height: 2.3;
+         font-weight: 700;
+         text-transform: uppercase;
+         color: #333333;
+         width: 170px;
+         height: 36px;
+         background-color: #ffc200;
+         border-radius: 4px;
+         text-align: center;
+         margin-top: 30px;
+         transition: color .2s linear, background-color .2s linear;
+      }
+}
+.intro__button:hover{
+   color: #ffc200 ;
+   background-color: #303030;
+   border: #ffc200 1px solid;
+   font-size: 15.5px;
+   line-height: 2.3;
+   font-weight: 700;
+   cursor: pointer;
+}  
+.intro__button:active{
+   color: #333333;
+   background-color: #ffc200;
+
+}
+
+// HEADER
+.header {
+   width: 100%;
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   right: 0%;
+   z-index: 1000;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__logo {
+      margin-top: 15px;
+      
+   }
+   &__logoimg{
+      width: 140px;
+      
+   }
+}
+.nav {
+   margin-top: 15px;
+   &__link{
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 15px;
+      font-family: Montserrat;
+      font-size: 20px;
+      line-height: 1.9;
+      font-weight: 400;
+      color: #ffffff;
+      transition: color .2s linear;
+      
+}
+}
+.nav__link:hover{
+   color: #ffc200;
+}
+.nav__link:active{
+   color:#ffffff
+   
+}
+// BESTSELLER
+.bestseller {
+   background-color: #ffffff;
+   &__content {
+      margin-bottom: -2px;
+   }
+   &__toptext {
+      margin-top: 40px;
+   }
+
+   &__title {
+      font-family: 'Grand Hotel';
+      font-size: 60px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #333333;
+      text-align: center;
+      margin-top: -40px;
+      padding-top: 50px;
+   }
+   &__text {
+      width: 100%;
+      font-family: Montserrat;
+      font-size: 17.8px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #333333;
+      text-align: center;
+   max-width: 650px;
+   margin: 0 auto;
+}
+   &__choose {
+      display: flex;
+   }
+}
+.item {
+   margin-top: 35px;
+   width:33.33% ;
+   margin-bottom: 0px;
+   &__img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+   }
+   &__title {font-family: 'Grand Hotel';
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #333333;
+   text-align: center;}
+   &__text {font-family: Montserrat;
+      font-size: 13.9px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #333333;
+   text-align: center;}
+   &__itemimage{width: 160px;
+      }
+}
+// TASTE
+.taste {
+   background: url(../img/reeditbg2.png) no-repeat center;
+   background-size: cover;
+   
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 40px;
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 0px;
+   }
+   &__img {
+      margin-top: 145px;
+      margin-left: 50px;
+   }
+   &__content {
+      margin-top: 150px;
+      min-width: 500px;
+      margin-bottom: 30px;
+      margin-left: 50px;
+   }
+   &__title {font-family: 'Grand Hotel';
+      font-size: 75.7px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #ffc200;
+      margin-left: 25px;}
+   &__text {width: 100%;
+      font-family: Montserrat;
+      font-size: 17px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #ffffff;
+      width: 400px;
+      margin-left: 25px;}
+   &__button {font-family: Montserrat;
+      font-size: 16.0px;
+      line-height: 2.3;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #333333;
+      width: 170px;
+      height: 36px;
+      background-color: #ffc200;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 30px;
+      transition: color .2s linear, background-color .2s linear;
+      margin-left:25px;}
+}
+.taste__button:hover{
+   color: #ffc200 ;
+   background-color: #303030;
+   border: #ffc200 1px solid;
+   font-size: 15.5px;
+   line-height: 2.3;
+   font-weight: 700;
+   cursor: pointer;
+}  
+.taste__button:active{
+   color: #333333;
+   background-color: #ffc200;
+
+}
+
+.img {
+   &__taste {width: 250px;}
+}
+// STATISTICS
+.statistics {
+   background: url(../img/bg3.png) no-repeat center;
+   background-size: cover;
+   &__toptext {
+      margin-bottom: 50px;
+      padding-top: 70px;
+   }
+   &__title {
+      font-family: 'Grand Hotel';
+      font-size: 90px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #ffc200;
+      text-align: center;
+   }
+   &__text {font-family: Montserrat;
+      font-size: 20.7px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #ffffff;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;}
+      &__cards {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 50px;
+      max-width: 730px;
+      margin: 0 auto;
+   }
+   
+}
+
+
+.itemstat {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 150px;
+   height: 150px;
+   border: 4px solid #ffffff;
+   border-radius: 50%;
+   &__title {font-family: Montserrat;
+      font-size: 35px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #ffc200;}
+   &__text {font-family: Montserrat;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;}
+}
+// CHICKEN
+.chicken {
+   background: url(../img/bg4.png) no-repeat center;
+   background-size: cover;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 auto;
+   }
+   &__content {
+      min-width: 500px;
+      margin-top: 50px;
+      padding-bottom: 150px;
+   }
+   &__title {font-family: 'Grand Hotel';
+      font-size: 75.7px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #ffc200;
+   margin-left: 30px;}
+   &__text {width: 100%;
+      font-family: Montserrat;
+      font-size: 17px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #ffffff;
+      width: 400px;
+      margin-left: 30px;}
+   &__button {
+      font-family: Montserrat;
+      font-size: 16.0px;
+      line-height: 2.3;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #333333;
+      width: 170px;
+      height: 36px;
+      background-color: #ffc200;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 30px;
+      transition: color .2s linear, background-color .2s linear;
+      margin-left: 30px;
+   }
+   &__img { margin-top: 40px;
+      margin-right: 50px;
+     
+   }
+}
+.chicken__button:hover{
+   color: #ffc200 ;
+   background-color: #303030;
+   border: #ffc200 1px solid;
+   font-size: 15.5px;
+   line-height: 2.3;
+   font-weight: 700;
+   cursor: pointer;
+}  
+.chicken__button:active{
+   color: #333333;
+   background-color: #ffc200;
+
+}
+.img {
+   &__chicken {
+      width: 250px;
+   }
+}
+// QUOTE
+.quote {
+   background: url(../img/bg6.png);
+   background-size: cover;
+   margin-bottom: -2px;
+   
+   &__inner {
+      padding-top: 120px;
+      padding-bottom: 120px;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+   }
+   &__text {font-family: Montserrat;
+      font-size: 25.9px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #333333;
+      text-align: center;
+   margin-bottom: 20px;}
+   &__subtitle {font-family: 'Grand Hotel';
+      font-size: 54.2px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #333333;
+      text-align: center;
+}
+}
+// SUBSCRIBE
+.subscribe {
+   background: url(../img/bg5.png);
+   background-size: cover;
+   &__inner {
+      padding-bottom: 170px;
+      padding-top: 100px;
+   }
+   &__content {
+      max-width: 500px;
+      margin: 0 auto;
+   }
+   &__title {font-family: 'Grand Hotel';
+      font-size: 75.7px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #333333;
+      text-align: center;}
+   &__text {font-family: Montserrat;
+      font-size: 17px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 50px;
+      }
+   &__input {
+      margin: 0 auto;
+   }
+  
+
+}
+
+.emailinput {
+   width: 305px;
+height: 30px;
+background-color: #f4f4f4;
+border-radius: 4px 0px 0px 4px;
+padding-left: 15px;
+margin-left: 45px;
+background-color: #fff;
+border: #ffc200 1px solid;
+}
+.emailinput:focus{
+   background-color: #fff;
+   border: #ffc200 1px solid;
+   box-shadow: .0px .0px 3px .1px #ffc200 ;
+}
+
+.button {width: 100px;
+      height: 30px;
+      background-color: #ffc200;
+      border-radius: 0px 4px 4px 0px;
+      font-family: Montserrat;
+      font-size: 12px;
+      line-height: .8;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #333333;
+      margin-left: -5px;
+      transition: color .2s linear, background-color .2s linear;
+         }
+.button:hover{
+            color: #ffc200 ;
+            background-color: #303030;
+           
+            
+            font-weight: 700;
+            cursor: pointer;
+         }  
+.button:active{
+            color: #333333;
+            background-color: #ffc200;
+         }
+
+// FOOTER
+.footer {
+   height: 300px;
+   background-color: #303030;
+   display: flex;
+   align-items: center;
+   
+   &__inner {
+      display: flex;
+   }
+  
+   &__column {
+      display: flex;
+     
+      flex-direction: column;
+   }
+}
+
+.info {
+   width: 100%;
+   max-width: 240px;
+   margin-right: 50px;
+   &__title {
+      font-family: Montserrat;
+font-size: 15px;
+line-height: 1.2;
+font-weight: 700;
+text-transform: uppercase;
+color: #ffffff;
+margin-bottom: 15px;
+   }
+   &__text {font-family: Montserrat;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #ffffff;}
+      
+   &__socials {
+      margin-top: 15px;
+      
+   }
+}
+.soc {
+   &_icons {
+      width: 30px;
+      margin-right: 10px;
+   }
+}
+
+
+.column {
+   width: 100%;
+   max-width: 120px;
+   &__title {
+      font-family: Montserrat;
+font-size: 15px;
+line-height: 1.2;
+font-weight: 700;
+text-transform: uppercase;
+color: #ffffff;
+margin-bottom: 10px;
+   }
+   &__list {font-family: Montserrat;
+      font-size: 12px;
+      line-height: 1.8;
+      font-weight: 400;
+      color: #ffffff;}
+}
+.column{
+   margin-left: 70px;
+}
+.list__link{
+   color: #ffffff;
+}
+.list__link:hover{
+   text-decoration: underline;
+}
